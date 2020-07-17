@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>header</title>
+    <link rel="stylesheet" href="/component/header/css/header.css">
+</head>
+<body>
+    <div class="header-content">
+        <div class="logo flt">
+            <a href="/pages/index.html">
+                <img src="/image/logo.png">
+            </a>
+        </div>
+        <div class="h_icon flt">
+            <span class="qq">1938083884</span>
+        </div>
+        <div class="h_icon flt">
+            <span class="phone">13206640372</span>
+        </div>
+        <div class="menu_btn frt">
+            <label class="lab1"></label>
+            <label class="lab2"></label>
+            <label class="lab3"></label>
+        </div>
+        <div class="h_text frt">首页</div>
+        <div class="menu frt">
+            <ul>
+                <li class="on">
+                    <a href="/pages/index.html">
+                        <h4 class="icon1">
+                            首页
+                            <span>home page</span>
+                        </h4>
+                    </a>
+                </li>
+                <li>
+                    <a href="/pages/index.html">
+                        <h4 class="icon1">
+                            首页
+                            <span>home page</span>
+                        </h4>
+                    </a>
+                </li>
+                <li>
+                    <a href="/pages/index.html">
+                        <h4 class="icon1">
+                            首页
+                            <span>home page</span>
+                        </h4>
+                    </a>
+                </li>
+                <li>
+                    <a href="/pages/index.html">
+                        <h4 class="icon1">
+                            首页
+                            <span>home page</span>
+                        </h4>
+                    </a>
+                </li>
+                <li>
+                    <a href="/pages/index.html">
+                        <h4 class="icon1">
+                            首页
+                            <span>home page</span>
+                        </h4>
+                    </a>
+                </li>
+                <li>
+                    <a href="/pages/index.html">
+                        <h4 class="icon1">
+                            首页
+                            <span>home page</span>
+                        </h4>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        let btn = $(".menu_btn")
+        let headerContent = $(".header-content")
+        let Look = false
+        btn.click(function(){
+            if(!Look){
+                headerContent.addClass("h_menu")
+            }else{
+                headerContent.removeClass("h_menu")
+            }
+            Look = !Look
+        })
+    </script>
+</body>
+</html>
