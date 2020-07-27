@@ -27,51 +27,63 @@
         <div class="h_text frt">首页</div>
         <div class="menu frt">
             <ul>
-                <li class="on">
+                <li id="index">
                     <a href="/pages/index.html">
                         <h4 class="icon1">
                             首页
-                            <span>home page</span>
+                            <span>
+                                home page
+                            </span>
                         </h4>
                     </a>
                 </li>
-                <li>
-                    <a href="/pages/index.html">
-                        <h4 class="icon1">
-                            首页
-                            <span>home page</span>
+                <li id="about">
+                    <a href="/pages/about.html">
+                        <h4 class="icon2">
+                            关于我们
+                            <span>
+                                aboutMe page
+                            </span>
                         </h4>
                     </a>
                 </li>
-                <li>
-                    <a href="/pages/index.html">
-                        <h4 class="icon1">
-                            首页
-                            <span>home page</span>
+                <li id="corporate">
+                    <a href="/pages/corporate.html">
+                        <h4 class="icon3">
+                            公司业务
+                            <span>
+                                corporate page
+                            </span>
                         </h4>
                     </a>
                 </li>
-                <li>
-                    <a href="/pages/index.html">
-                        <h4 class="icon1">
-                            首页
-                            <span>home page</span>
+                <li id="categoryWorks">
+                    <a href="/pages/categoryWorks.html">
+                        <h4 class="icon4">
+                            设计作品
+                            <span>
+                                categoryWorks page
+                            </span>
                         </h4>
                     </a>
                 </li>
-                <li>
-                    <a href="/pages/index.html">
-                        <h4 class="icon1">
-                            首页
-                            <span>home page</span>
+                <li id="news">
+                    <a href="/pages/news.html">
+                        <h4 class="icon5">
+                            新闻动态
+                            <span>
+                                news page
+                            </span>
                         </h4>
                     </a>
                 </li>
-                <li>
-                    <a href="/pages/index.html">
-                        <h4 class="icon1">
-                            首页
-                            <span>home page</span>
+                <li id="connectUs">
+                    <a href="/pages/connectUs.html">
+                        <h4 class="icon6">
+                            联系我们
+                            <span>
+                                connectUs page
+                            </span>
                         </h4>
                     </a>
                 </li>
@@ -79,17 +91,24 @@
         </div>
     </div>
     <script>
-        let btn = $(".menu_btn")
-        let headerContent = $(".header-content")
-        let Look = false
-        btn.click(function(){
-            if(!Look){
-                headerContent.addClass("h_menu")
-            }else{
-                headerContent.removeClass("h_menu")
-            }
-            Look = !Look
-        })
+        function HeaderObject(){
+            let btn = $(".menu_btn")
+            let headerContent = $(".header-content")
+            let jump = JSON.parse(localStorage.getItem("key")).data
+            let Look = false
+            btn.click(function(){
+                if(!Look){
+                    headerContent.addClass("h_menu")
+                }else{
+                    headerContent.removeClass("h_menu")
+                }
+                Look = !Look
+            })
+            $("#"+jump).addClass("on")
+            let a = $("#" + jump).find("h4").contents()[0].data
+            $(".h_text").html(a)
+        }
+        HeaderObject()
     </script>
 </body>
 </html>

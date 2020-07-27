@@ -1,0 +1,38 @@
+.page_tag{
+    padding: 20px 0;
+    margin-bottom: 60px;
+    text-align: center;
+}
+.page_tag ul{
+    display: inline-block;
+    border: 1px solid rgba(255,255,255,.2);
+}
+.page_tag ul li{
+    margin-right: -3px;
+    display: inline-block;
+}
+
+.page_tag ul li a{
+    display: block;
+    padding: 0 28px;
+    color: #ffffff;
+    line-height: 34px;
+    position: relative;
+}
+.page_tag ul li a::after{
+    content: "|";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: -2px;
+    opacity: 0.26;
+}
+.page_tag ul li a:hover:after, .page_tag ul li.on a:after {
+    display: none;
+}
+.page_tag ul li a:hover,.page_tag ul li.on a{
+    background: #0784c9;
+}
+.page_tag ul li:last-child a:after {
+    display: none;
+}

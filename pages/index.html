@@ -4,12 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>首页</title>
-    <link rel="stylesheet" href="/css/common/common.css">
     <link rel="stylesheet" href="/lib/swiper-4.5.3/dist/css/swiper.min.css">
+    <link rel="stylesheet" href="/lib/animate/animate.min.css">
+    <link rel="stylesheet" href="/lib/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="/lib/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="/css/common/common.css">
     <link rel="stylesheet" href="/css/page/index.css">
 </head>
-<body style="height: 6000px;">
-    <div class="header">
+<body>
+    <div class="header" bind-data="index">
 
     </div>
     <div class="index-content content">
@@ -20,34 +23,671 @@
                 </div>
                 <div class="text">
                     <div class="wrap">
-
+                        <h2 class="animated fadeInUp">CUSTOM PHOTOGRAPHY, CREATE VISUAL FEAST</h2>
+                        <p class="animated fadeInUp">精心定制摄影服务、打造视觉盛宴</p>
+                        <p class="animated fadeInUp">我们是美丽的制造者</p>
                     </div>
                 </div>
             </div>
         </div>
+        <div class="page_list">
+            <div class="page page1">
+                <div class="wrap">
+                    <div class="page1_text wow clear fadeInUp" data-wow-delay="0.1s" style="visibility: hidden; animation-delay: 0.1s; animation-name: none;">
+                        <div class="img_box">
+                            <div class="img_bg">
+                                <img src="/image/bg.png">
+                            </div>
+                            <div class="img">
+                                <img src="/image/img1.jpg">
+                            </div>
+                        </div>
+                        <div class="text">
+                            <h3>关于热麦设计</h3>
+                            <label class="line"></label>
+                            <p>莫道建站立志于为每一位高端诉求者提供最专业、便捷的建站服务体验，我们是一家专业的互联网设计开发机构，以全新的视觉设计及出色的用户体验为创业者、大中小型企业提供简单却不平庸的企业站点。让每一位合作伙伴创造出更大的商业价值，建立属于自己的互联网营销平台。莫道建站提供了多类主题、不同风格与行业的模板网站、艺术品级的设计水准、多终端响应式设计。让每一位普通用户能享受到高品质的建站服务体验。并且我们也为需要定制化设计的用户提供更高标准的网站定制服务，针对您的企业文化及理念制作属于您企业特有的专属创意网站。我们将凭借优秀的设计实力与专业的设计服务打造成为国内最优秀的互联网设计开发品牌。艺术品级的设计水准、多终端响应式设计。让每一位普通用户能享受到高品质的建站服务体验。</p>
+                            <div class="btn">
+                                <a href="#">查看更多</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="page page2">
+                <div class="wrap">
+                    <div class="page2_text clear wow fadeInUp" data-wow-delay="0.1s" style="visibility: hidden; animation-delay: 0.1s; animation-name: none;">
+                        <div class="img_box">
+                            <div class="text1">
+                                <span>摄影业务</span>
+                            </div>
+                            <div class="img">
+                                <img src="/image/img2.jpg">
+                            </div>
+                        </div>
+                        <div class="text over">
+                            <h3>建筑摄影</h3>
+                            <p>一款美观大气的响应式建站平台，一种方便快捷的建站方式。我们致力于帮助中小企业用最少的时间和成本建设真正的高端响应式网站，让世界通过官网的名片快速了解您的企业。我们只是想让更多的用户看到更精美的网站。</p>
+                        </div>
+                    </div>
+                    <div class="page2_owl">
+                        <div class="owl_cur wow fadeInUp" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: none;">
+                            <span class="prev">P R E V</span>
+                            <span class="next">N E X T</span>
+                        </div>
+                        <div id="page2_carousel" class="owl-carousel owl-theme owl wow fadeInUp" data-wow-delay="0.1s">
+                            <div class="item on">
+                                <div class="box">
+                                    <div class="img1">
+                                        <img src="/image/icon5.png">
+                                    </div>
+                                    <h3>服装摄影2</h3>
+                                    <p>Multi topic category</p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="box">
+                                    <div class="img1">
+                                        <img src="/image/icon5.png">
+                                    </div>
+                                    <h3>服装摄影</h3>
+                                    <p>Multi topic category</p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="box">
+                                    <div class="img1">
+                                        <img src="/image/icon5.png">
+                                    </div>
+                                    <h3>服装摄影</h3>
+                                    <p>Multi topic category</p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="box">
+                                    <div class="img1">
+                                        <img src="/image/icon5.png">
+                                    </div>
+                                    <h3>服装摄影</h3>
+                                    <p>Multi topic category</p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="box">
+                                    <div class="img1">
+                                        <img src="/image/icon5.png">
+                                    </div>
+                                    <h3>服装摄影</h3>
+                                    <p>Multi topic category</p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="box">
+                                    <div class="img1">
+                                        <img src="/image/icon5.png">
+                                    </div>
+                                    <h3>服装摄影</h3>
+                                    <p>Multi topic category</p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="box">
+                                    <div class="img1">
+                                        <img src="/image/icon5.png">
+                                    </div>
+                                    <h3>服装摄影</h3>
+                                    <p>Multi topic category</p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="box">
+                                    <div class="img1">
+                                        <img src="/image/icon5.png">
+                                    </div>
+                                    <h3>服装摄影</h3>
+                                    <p>Multi topic category</p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="box">
+                                    <div class="img1">
+                                        <img src="/image/icon5.png">
+                                    </div>
+                                    <h3>服装摄影</h3>
+                                    <p>Multi topic category</p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="box">
+                                    <div class="img1">
+                                        <img src="/image/icon5.png">
+                                    </div>
+                                    <h3>服装摄影</h3>
+                                    <p>Multi topic category</p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="box">
+                                    <div class="img1">
+                                        <img src="/image/icon5.png">
+                                    </div>
+                                    <h3>服装摄影</h3>
+                                    <p>Multi topic category</p>
+                                </div>
+                            </div>
+                            <div class="item"> 
+                                <div class="box">
+                                    <div class="img1">
+                                        <img src="/image/icon5.png">
+                                    </div>
+                                    <h3>服装摄影1</h3>
+                                    <p>Multi topic category</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="page page3">
+                <div class="wrap clear">
+                    <div class="page3_text wow fadeInUp" data-wow-delay="0.1s" style="visibility: hidden; animation-delay: 0.1s; animation-name: none;">
+                        <h3>摄影作品</h3>
+                        <label class="line"></label>
+                        <div class="list">
+                            <ul class="clear ul_tag">
+                                <li class="on"><a href="javascript:void(0)">作品类别一</a></li>
+                                <li><a href="javascript:void(0)">作品类别一</a></li>
+                                <li><a href="javascript:void(0)">作品类别一</a></li>
+                                <li><a href="javascript:void(0)">作品类别一</a></li>
+                                <li><a href="javascript:void(0)">作品类别一</a></li>
+                                <li><a href="javascript:void(0)">作品类别一</a></li>
+                            </ul>
+                        </div>
+                        <div class="text">
+                            <h4>作品名称</h4>
+                            <p>产品简介：莫道建站立志于为每一位高端诉求者提供最专业、便捷的建站服务体验，我们是一家专业的互联网设计开发机构，以全新的视觉设计及出色的用户体验为创业者、大中小型企业提供简单却不平庸的企业站点。</p>
+                        </div>
+                        <div class="btn">
+                            <a href="#">查看更多</a>
+                        </div>
+                    </div>
+                    <div class="page3_list wow fadeInUp" data-wow-delay="0.1s" style="visibility: hidden; animation-delay: 0.1s; animation-name: none;">
+                        <div class="list">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <div class="img">
+                                            <img src="/image/img3.jpg">
+                                        </div>
+                                        <div class="text">
+                                            <span>作品名称</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="img">
+                                            <img src="/image/img3.jpg">
+                                        </div>
+                                        <div class="text">
+                                            <span>作品名称</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="img">
+                                            <img src="/image/img3.jpg">
+                                        </div>
+                                        <div class="text">
+                                            <span>作品名称</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="img">
+                                            <img src="/image/img3.jpg">
+                                        </div>
+                                        <div class="text">
+                                            <span>作品名称</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="img">
+                                            <img src="/image/img3.jpg">
+                                        </div>
+                                        <div class="text">
+                                            <span>作品名称</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="img">
+                                            <img src="/image/img3.jpg">
+                                        </div>
+                                        <div class="text">
+                                            <span>作品名称</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="img">
+                                            <img src="/image/img3.jpg">
+                                        </div>
+                                        <div class="text">
+                                            <span>作品名称</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="img">
+                                            <img src="/image/img3.jpg">
+                                        </div>
+                                        <div class="text">
+                                            <span>作品名称</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="img">
+                                            <img src="/image/img3.jpg">
+                                        </div>
+                                        <div class="text">
+                                            <span>作品名称</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="img">
+                                            <img src="/image/img3.jpg">
+                                        </div>
+                                        <div class="text">
+                                            <span>作品名称</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="img">
+                                            <img src="/image/img3.jpg">
+                                        </div>
+                                        <div class="text">
+                                            <span>作品名称</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="img">
+                                            <img src="/image/img3.jpg">
+                                        </div>
+                                        <div class="text">
+                                            <span>作品名称</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="img">
+                                            <img src="/image/img3.jpg">
+                                        </div>
+                                        <div class="text">
+                                            <span>作品名称</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="img">
+                                            <img src="/image/img3.jpg">
+                                        </div>
+                                        <div class="text">
+                                            <span>作品名称</span>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="page page4">
+                <div class="wrap">
+                    <div class="page_tit wow fadeInUp" data-wow-delay="0.1s" style="visibility: hidden; animation-delay: 0.1s; animation-name: none;">
+                        <h3>摄影师团队</h3>
+                        <label class="line"></label>
+                    </div>
+                    <div class="team_owl">
+                        <div class="team_text wow fadeInUp" data-wow-delay="0.1s" style="visibility: hidden; animation-delay: 0.1s; animation-name: none;">
+                            <div class="owl_cur">
+                                <span class="prev">P R E V</span>
+                                <span class="next">N E X T</span>
+                            </div>
+                            <h4>于馨雅</h4>
+                            <div class="text">
+                                <p>一款美观大气的响应式建站平台，一种方便快捷的建站方式。我们致力于帮助中小企业用最少的时间和成本建设真正的高端响应式网站，让世界通过官网的名片快速了解您的企业。</p>
+                                <p>我们只是想让更多的用户看到更精美的网站。</p>
+                            </div>
+                        </div>
+                        <div id="page4_carousel" class="owl clear owl-theme owl-carousel wow fadeInUp" data-wow-delay="0.1s" style="visibility: hidden; animation-delay: 0.1s; animation-name: none;">
+                            <div class="item">
+                                <div class="img">
+                                    <img src="/image/img_03.jpg">
+                                </div>
+                                <div class="text">
+                                    <h3>余泽意</h3>
+                                    <p>首席设计师</p>
+                                </div>
+                            </div>
+                            <div class="item on">
+                                <div class="img">
+                                    <img src="/image/img_03.jpg">
+                                </div>
+                                <div class="text">
+                                    <h3>余泽意</h3>
+                                    <p>首席设计师</p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="img">
+                                    <img src="/image/img_03.jpg">
+                                </div>
+                                <div class="text">
+                                    <h3>余泽意</h3>
+                                    <p>首席设计师</p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="img">
+                                    <img src="/image/img_03.jpg">
+                                </div>
+                                <div class="text">
+                                    <h3>余泽意</h3>
+                                    <p>首席设计师</p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="img">
+                                    <img src="/image/img_03.jpg">
+                                </div>
+                                <div class="text">
+                                    <h3>余泽意</h3>
+                                    <p>首席设计师</p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="img">
+                                    <img src="/image/img_03.jpg">
+                                </div>
+                                <div class="text">
+                                    <h3>余泽意</h3>
+                                    <p>首席设计师</p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="img">
+                                    <img src="/image/img_03.jpg">
+                                </div>
+                                <div class="text">
+                                    <h3>余泽意</h3>
+                                    <p>首席设计师</p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="img">
+                                    <img src="/image/img_03.jpg">
+                                </div>
+                                <div class="text">
+                                    <h3>余泽意</h3>
+                                    <p>首席设计师</p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="img">
+                                    <img src="/image/img_03.jpg">
+                                </div>
+                                <div class="text">
+                                    <h3>余泽意</h3>
+                                    <p>首席设计师</p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="img">
+                                    <img src="/image/img_03.jpg">
+                                </div>
+                                <div class="text">
+                                    <h3>余泽意</h3>
+                                    <p>首席设计师</p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="img">
+                                    <img src="/image/img_03.jpg">
+                                </div>
+                                <div class="text">
+                                    <h3>余泽意</h3>
+                                    <p>首席设计师</p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="img">
+                                    <img src="/image/img_03.jpg">
+                                </div>
+                                <div class="text">
+                                    <h3>余泽意</h3>
+                                    <p>首席设计师</p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="img">
+                                    <img src="/image/img_03.jpg">
+                                </div>
+                                <div class="text">
+                                    <h3>余泽意</h3>
+                                    <p>首席设计师</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="page page5">
+                <div class="wrap">
+                    <div class="page_tit wow fadeInUp" data-wow-delay="0.1s" style="visibility: hidden; animation-delay: 0.1s; animation-name: none;">
+                        <h3>新闻动态</h3>
+                        <label class="line"></label>
+                    </div>
+                    <div class="page5_owl wow fadeInUp">
+                        <div class="owl_cur">
+                            <span class="prev">P R E V</span>
+                            <span class="next">N E X T</span>
+                        </div>
+                        <div id="page5_carousel" class="owl owl-carousel owl-theme">
+                            <div class="item">
+                                <a href="#">
+                                    <div class="img">
+                                        <img src="/image/img_26.jpg">
+                                    </div>
+                                    <div class="text">
+                                        <h3>余茵茵荣获全国摄影大赛一等奖</h3>
+                                        <p>莫道建站立志于为每一位高端诉求者提供最专业、便捷的建站服务体验，我们是一家专业的互联网设计开发机构。</p>
+                                        <div class="bottom">
+                                            <span>2017-05-16</span>
+                                            <div class="btn">
+                                                <span>详情</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a href="#">
+                                    <div class="img">
+                                        <img src="/image/img_26.jpg">
+                                    </div>
+                                    <div class="text">
+                                        <h3>余茵茵荣获全国摄影大赛一等奖</h3>
+                                        <p>莫道建站立志于为每一位高端诉求者提供最专业、便捷的建站服务体验，我们是一家专业的互联网设计开发机构。</p>
+                                        <div class="bottom">
+                                            <span>2017-05-16</span>
+                                            <div class="btn">
+                                                <span>详情</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a href="#">
+                                    <div class="img">
+                                        <img src="/image/img_26.jpg">
+                                    </div>
+                                    <div class="text">
+                                        <h3>余茵茵荣获全国摄影大赛一等奖</h3>
+                                        <p>莫道建站立志于为每一位高端诉求者提供最专业、便捷的建站服务体验，我们是一家专业的互联网设计开发机构。</p>
+                                        <div class="bottom">
+                                            <span>2017-05-16</span>
+                                            <div class="btn">
+                                                <span>详情</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a href="#">
+                                    <div class="img">
+                                        <img src="/image/img_26.jpg">
+                                    </div>
+                                    <div class="text">
+                                        <h3>余茵茵荣获全国摄影大赛一等奖</h3>
+                                        <p>莫道建站立志于为每一位高端诉求者提供最专业、便捷的建站服务体验，我们是一家专业的互联网设计开发机构。</p>
+                                        <div class="bottom">
+                                            <span>2017-05-16</span>
+                                            <div class="btn">
+                                                <span>详情</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a href="#">
+                                    <div class="img">
+                                        <img src="/image/img_26.jpg">
+                                    </div>
+                                    <div class="text">
+                                        <h3>余茵茵荣获全国摄影大赛一等奖</h3>
+                                        <p>莫道建站立志于为每一位高端诉求者提供最专业、便捷的建站服务体验，我们是一家专业的互联网设计开发机构。</p>
+                                        <div class="bottom">
+                                            <span>2017-05-16</span>
+                                            <div class="btn">
+                                                <span>详情</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a href="#">
+                                    <div class="img">
+                                        <img src="/image/img_26.jpg">
+                                    </div>
+                                    <div class="text">
+                                        <h3>余茵茵荣获全国摄影大赛一等奖</h3>
+                                        <p>莫道建站立志于为每一位高端诉求者提供最专业、便捷的建站服务体验，我们是一家专业的互联网设计开发机构。</p>
+                                        <div class="bottom">
+                                            <span>2017-05-16</span>
+                                            <div class="btn">
+                                                <span>详情</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="page page6">
+                <div class="wrap clear">
+                    <div class="page6_text wow fadeInUp" data-wow-delay="0.1s" style="visibility: hidden; animation-delay: 0.1s; animation-name: none;">
+                        <div class="page_tit left">
+                            <h3>联系我们</h3>
+                            <label class="line"></label>
+                        </div>
+                        <div class="text">
+                            <p>一款美观大气的响应式建站平台，一种方便快捷的建站方式。我们致力于帮助中小企业用最少的时间和成本建设真正的高端响应式网站，让世界通过官网的名片快速了解您的企业。我们只是想让更多的用户看到更精美的网站。</p>
+                        </div>
+                        <div class="list">
+                            <ul>
+                                <li class="li1">
+                                    <p>地址：杭州市滨江区中恒世纪科技园3栋B座</p>
+                                </li>
+                                <li class="li2">
+                                    <p>电话：XXXXXXXXXXXXXX</p>
+                                </li>
+                                <li class="li3">
+                                    <p>邮箱：xxxxxxxxxx@xxx.com</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="ewm">
+                            <i class="i_t i_l"></i>
+                            <i class="i_b i_l"></i>
+                            <i class="i_b i_r"></i>
+                            <i class="i_t i_r"></i>
+                            <img src="/image/ewm.jpg">
+                        </div>
+                    </div>
+                    <div class="page6_content wow fadeInUp" data-wow-delay="0.1s" style="visibility: hidden; animation-delay: 0.1s; animation-name: none;">
+                        <h3>您的联系方式</h3>
+                        <div class="list">
+                            <ul>
+                                <li>
+                                    <span>您的电话</span>
+                                    <div class="div_input">
+                                        <input type="text" placeholder="请输入...">
+                                    </div>
+                                </li>
+                                <li>
+                                    <span>您的邮箱</span>
+                                    <div class="div_input">
+                                        <input type="text" placeholder="请输入...">
+                                    </div>
+                                </li>
+                                <li class="li_last">
+                                    <span>请输入您的服务需求</span>
+                                    <div class="div_input">
+                                        <textarea placeholder="请输入..."></textarea>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="clear"></div>
+                        <div class="btn center">
+                            <a href="#">提交</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer"></div>
     </div>
-    <div class="footer">
 
-    </div>
-    <!-- <div class="swiper-container">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide">Slide 1</div>
-            <div class="swiper-slide">Slide 2</div>
-            <div class="swiper-slide">Slide 3</div>
-        </div> -->
-        <!-- 如果需要分页器 -->
-        <!-- <div class="swiper-pagination"></div> -->
-        
-        <!-- 如果需要导航按钮 -->
-        <!-- <div class="swiper-button-prev"></div> -->
-        <!-- <div class="swiper-button-next"></div> -->
-        
-        <!-- 如果需要滚动条 -->
-        <!-- <div class="swiper-scrollbar" name="a" value="11111">111111</div>  -->
-    <!-- </div> -->
     <script src="/lib/jquery/js/jQuery.js"></script>
     <script src="/lib/swiper-4.5.3/dist/js/swiper.min.js"></script>
+    <script src="/lib/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+    <script src="/lib/WOW-master/dist/wow.min.js"></script>
     <script src="/js/common/common.js"></script>
     <script src="/js/page/index.js"></script>
+
 </body>
 </html>

@@ -1,7 +1,33 @@
 let header = $(".header")
-let content = $(".index-content")
-header.load("/component/header/header.html")
+let footer = $(".footer")
+let tag = $(".tag")
+let content = $(".content")
+let data = header.attr("bind-data")
+let tagdata = tag.attr("bind-data")
+let Storage = {
+  data,
+  tagdata
+}
+let scorll2 = new WOW({
+  boxClass: 'wow',
+  animateClass: 'animated',
+  offset: 100,
+  mobile: true,
+  livue: true
+})
 
+header.load("/component/header/header.html")
+footer.load("/component/footer/footer.html")
+tag.load("/component/tag/tag.html")
+
+storageObj(Storage)
+$(window).on('scroll',scorll1)
+scorll2.init()
+
+function storageObj(obj) {
+  let Str = JSON.stringify(obj) 
+  localStorage.setItem("key",Str)
+}
 function scorll1() {
   if(content.offset().top - $(window).scrollTop() < -20){
     header.addClass("fixed")
@@ -9,4 +35,41 @@ function scorll1() {
       header.removeClass("fixed")
   }
 }
-$(window).on('scroll',scorll1)
+function clickCallBack(name,ChangName){
+  $(name).on("click",function() {
+    $(name).removeClass(ChangName);
+    $(this).addClass(ChangName)
+  })
+}
+
+class OwlCarousel {
+  constructor(name = null,loop = null,margin = null,nav = null,dots = null,responsive = null){
+    this.name = name
+    this.loop = loop
+    this.margin = margin
+    this.nav = nav
+    this.dots = dots
+    this.responsive = responsive
+    this.owlCallBcak()
+  }
+  owlCallBcak(){
+    return $(this.name).owlCarousel({
+      loop: this.loop,
+      margin: this.margin,
+      nav: this.nav,
+      dots: this.dots,
+      responsive: this.responsive
+    })
+  }
+}
+
+// function scorll2(){
+//   $(".wow").each(function (index,el){
+//     if($(window).scrollTop() > $(this).offset().top - $(window).height()+100){
+//       $(this).css({"animation-name": "fadeInUp","visibility": "visible"})
+//       $(this).addClass("animated")
+//     }
+//   })
+// }
+// $(window).on('scroll',scorll2)
+

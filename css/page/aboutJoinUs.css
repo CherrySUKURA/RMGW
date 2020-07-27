@@ -1,0 +1,55 @@
+.job_list ul li{
+    border: 1px solid #41556b;
+    background: #1e354f;
+    border-radius: 3px;
+    margin-bottom: 20px;
+}
+.job_list ul li .tit{
+    padding: 35px 40px 40px 30px;
+}
+.job_list ul li .tit h3{
+    font-size: 22px;
+    color: #2fb5ff;
+}
+.job_list ul li .tit h3 label{
+    float: right;
+    width: 24px;
+    height: 24px;
+    background: url(/image/icon11.png) no-repeat center center;
+    margin-top: 3px;
+    cursor: pointer;
+}
+.job_list ul li.on .tit h3 label {
+    background: url(/image/icon11-1.png) no-repeat center center;
+}
+.job_list ul li .tit p{
+    font-size: 18px;
+    color: #fff;
+    margin: 15px 0 12px;
+}
+.job_list ul li .tit span{
+    display: block;
+    width: 136px;
+    height: 22px;
+    line-height: 22px;
+    background: #0c2036;
+    color: #fff;
+    border-radius: 5px;
+    text-align: center;
+}
+.job_list ul li .drop{
+    padding: 18px 30px 45px 37px;
+    border-top: 1px solid #41556b;
+    transition: all 0s;
+    display: none;
+}
+.job_list ul li .drop .text{
+    margin-top: 22px;
+}
+.job_list ul li .drop .text h4{
+    font-size: 16px;
+    line-height: 36px;
+}
+.job_list ul li .drop .text p{
+    color: rgba(255, 255, 255, 0.8);
+}

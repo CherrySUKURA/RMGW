@@ -1,0 +1,39 @@
+.team_list{
+
+}
+.team_list ul{
+    margin: 0 -1.5%;
+}
+.team_list ul li{
+    width: 47%;
+    background: #19304b;
+    margin: 0 1.5% 30px;
+    position: relative;
+    float: left;
+}
+.team_list ul li .img{
+    float: left;
+    width: 200px;
+    height: 200px;
+}
+.team_list ul li .web{
+    overflow: hidden;
+    padding: 38px 30px 0 20px;
+}
+.team_list ul li .web h3{
+    font: 16px;
+    font-weight: normal;
+    line-height: 22px;
+}
+.team_list ul li .web h3 span{
+    float: right;
+    width: 95px;
+    height: 22px;
+    background: #0784c9;
+    font-size: 14px;
+    border-radius: 4px;
+    text-align: center;
+}
+.team_list ul li .web p{
+    margin-top: 20px;
+}

@@ -118,6 +118,21 @@
 .menu li h4.icon1{
     background: url("/image/menu_03.png") no-repeat left center;
 }
+.menu li h4.icon2{
+    background: url("/image/menu_06.png") no-repeat left center;
+}
+.menu li h4.icon3{
+    background: url("/image/menu_08.png") no-repeat left center;
+}
+.menu li h4.icon4{
+    background: url("/image/menu_10.png") no-repeat left center;
+}
+.menu li h4.icon5{
+    background: url("/image/menu_13.png") no-repeat left center;
+}
+.menu li h4.icon6{
+    background: url("/image/menu_16.png") no-repeat left center;
+}
 .menu li h4{
     padding: 5px 0;
     padding-left: 70px;

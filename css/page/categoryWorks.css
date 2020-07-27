@@ -1,0 +1,24 @@
+.zp_list .list ul li{
+    width: 25%;
+    float: left;
+}
+.zp_list .list ul li a{
+    font-size: 18px;
+    color: #ffffff;
+    text-align: center;
+    display: block;
+    margin: 10px;
+    line-height: 50px;
+}
+.zp_list .list ul li a .img{
+    max-width: 290px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+.zp_list .list ul li a .img img{
+    display: block;
+}
+.zp_list .pagesize{
+    text-align: center;
+    margin: 50px 0;
+}

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tag</title>
+    <link rel="stylesheet" href="/component/tag/css/tag.css">
+</head>
+<body>
+    <div class="page_tag">
+        <ul>
+        </ul>
+    </div>
+    <script>
+        function tagObject(){
+            let getStorage = JSON.parse(localStorage.getItem("key"))
+            let jump = getStorage.tagdata
+            let items
+            let tagitem = ""
+            if(getStorage.data == "about"){
+                items = [
+                    {
+                        id: "about1",
+                        content: "关于我们",
+                        href: "about.html"
+                    },
+                    {
+                        id: "aboutDeveLopment",
+                        content: "发展历程",
+                        href: "aboutDeveLopment.html"
+                    },
+                    {
+                        id: "aboutTeam",
+                        content: "团队成员",
+                        href: "aboutTeam.html"
+                    },
+                    {
+                        id: "aboutJoinUs",
+                        content: "加入我们",
+                        href: "aboutJoinUs.html"
+                    }
+                ]
+            }
+            if(getStorage.data == "categoryWorks"){
+                items = [
+                    {
+                        id: "categoryOne",
+                        content: "摄影类别一",
+                        href: "categoryWorks.html"
+                    },
+                    {
+                        id: "categoryOne",
+                        content: "摄影类别一",
+                        href: "categoryWorks.html"
+                    },
+                    {
+                        id: "categoryOne",
+                        content: "摄影类别一",
+                        href: "categoryWorks.html"
+                    },
+                    {
+                        id: "categoryOne",
+                        content: "摄影类别一",
+                        href: "categoryWorks.html"
+                    },
+                    {
+                        id: "categoryOne",
+                        content: "摄影类别一",
+                        href: "categoryWorks.html"
+                    },
+                    {
+                        id: "categoryOne",
+                        content: "摄影类别一",
+                        href: "categoryWorks.html"
+                    }
+                ]
+            }
+            if(getStorage.data == "news"){
+                items = [
+                    {
+                        id: "company",
+                        content: "公司动态",
+                        href: "news.html"
+                    },
+                    {
+                        id: "trade",
+                        content: "行业新闻",
+                        href: "trade.html"
+                    },
+                    {
+                        id: "Guonei",
+                        content: "国内资讯",
+                        href: "Guonei.html"
+                    }
+                ]
+            }
+            items.forEach((item,index) => {
+                tagitem += `
+                <li id="${item.id}">
+                    <a href="${item.href}">${item.content}</a>
+                </li>`
+            })
+            $(".page_tag ul").html(tagitem)
+            $("#" + jump).addClass("on")
+        }
+        tagObject()
+    </script>
+</body>
+</html>

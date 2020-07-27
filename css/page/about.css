@@ -1,0 +1,35 @@
+.page7_text .img_box{
+    width: 470px;
+    float: left;
+    text-align: center;
+    margin-right: 40px;
+}
+.img_box img{
+    display: block;
+    margin: 0 auto;
+}
+.page7_text .img_box .img{
+    box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+}
+.page7_text .text{
+    overflow: hidden;
+    line-height: 30px;
+    color: #c6cfd9;
+    padding-top: 70px;
+}
+.page7_text .text h2{
+    font-size: 46px;
+    font-weight: normal;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    color: #fff;
+}
+.page7_text .text h4{
+    font-size: 22px;
+    font-weight: normal;
+    color: #ffffff;
+    margin-bottom: 25px;
+}
+.page7_text .text p{
+    height: auto;
+}

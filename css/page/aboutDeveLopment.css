@@ -1,0 +1,42 @@
+.fzlc_list .list{
+    padding: 20px 0;
+    position: relative;
+}
+.fzlc_list .list .line{
+    width: 6px;
+    background: #ffffff;
+    opacity: 0.2;
+    position: absolute;
+    left: 176px;
+    top: 0;
+    bottom: 0;
+}
+.fzlc_list ul li{
+    padding: 15px 0;
+}
+.fzlc_list ul li span{
+    font-size: 32px;
+    float: left;
+    width: 260px;
+    position: relative;
+}
+.fzlc_list ul li span::after{
+    content: "";
+    display: block;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: #ffffff;
+    border:3px solid #0784c9;
+    position: absolute;
+    top: 50%;
+    right: 70px;
+    transform: translateY(-50%);
+}
+.fzlc_list ul li .text{
+    overflow: hidden;
+}
+.fzlc_list ul li .text p{
+    color: rgba(255, 255, 255, 0.8);
+    min-height: 90px;
+}
