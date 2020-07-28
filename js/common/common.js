@@ -44,13 +44,12 @@ function clickCallBack(name,ChangName){
 
 class OwlCarousel {
   constructor(name = null,loop = null,margin = null,nav = null,dots = null,responsive = null){
-    this.name = name
-    this.loop = loop
-    this.margin = margin
-    this.nav = nav
-    this.dots = dots
-    this.responsive = responsive
-    this.owlCallBcak()
+    this.name = name;
+    this.loop = loop;
+    this.margin = margin;
+    this.nav = nav;
+    this.dots = dots;
+    this.responsive = responsive;
   }
   owlCallBcak(){
     return $(this.name).owlCarousel({
@@ -60,6 +59,42 @@ class OwlCarousel {
       dots: this.dots,
       responsive: this.responsive
     })
+  }
+}
+
+class HttpRequest {
+  constructor(url,type=null,data=null,dataType=null){
+    this.url = url;
+    this.type = type;
+    this.data = data;
+    this.dataType = dataType;
+  }
+  RequestData(){
+    return new Promise(function(resolve,reject){
+      $.ajax({
+        url: this.url,
+        type: this.type,
+        data: this.data,
+        dataType: this.dataType,
+        success: (res) => {
+          resolve(res)
+        },
+        error: (err) => {
+          reject(err)
+        }
+      })
+    })
+  }
+}
+
+class Rendering {
+  constructor(data,render,name){
+    this.data = data;
+    this.render = render;
+    this.name = name;
+  }
+  nameRender(){
+    $(this.name).html(this.render)
   }
 }
 
